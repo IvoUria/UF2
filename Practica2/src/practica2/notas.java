@@ -34,7 +34,7 @@ public class notas {
 
         System.out.print("Ingrese nota 1: ");
         primeranota = entrada.nextDouble();
-        System.out.print("Ingrese nota 2: ");
+        System.out.print("Ingrese nota 2: "); // prueba de commit
         segundanota = entrada.nextDouble();
 
         System.out.print("Ingrese nota 3: "); 
