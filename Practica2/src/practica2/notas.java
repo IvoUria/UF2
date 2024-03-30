@@ -50,19 +50,19 @@ public class notas {
      */
     public void comprobacion() {
         if (primeranota > 10) {
-            System.out.println("Nota 1 mal introducida");
+            System.out.println("Nota 1 no válida");
         } else {
             System.out.println("Nota 1 correcta");
         }
 
         if (segundanota > 10) {
-            System.out.println("Nota 2 mal introducida");
+            System.out.println("Nota 2 no válida");
         } else {
             System.out.println("Nota 2 correcta");
         }
 
         if (terceranota > 10) {
-            System.out.println("Nota 3 mal introducida");
+            System.out.println("Nota 3 no válida");
         } else {
             System.out.println("Nota 3 correcta");
         }
