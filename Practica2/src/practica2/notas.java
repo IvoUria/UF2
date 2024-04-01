@@ -16,7 +16,7 @@ public class notas {
 		*/
   
 	double primeranota, segundanota, terceranota;
-    double acu1, acu2, acu3, def;
+    double acu1, acu2, acu3, fin;
 
     // Scanner para recibir entrada del usuario
     Scanner entrada = new Scanner(System.in);
@@ -78,7 +78,7 @@ public class notas {
         acu1 = primeranota * 0.35;
         acu2 = segundanota * 0.35;
         acu3 = terceranota * 0.30;
-        def = acu1 + acu2 + acu3;
+        fin = acu1 + acu2 + acu3;
     }
 
     /**
@@ -98,7 +98,7 @@ public class notas {
         System.out.println("Acumulado 2 = " + acu2);
         System.out.println("Acumulado 3 = " + acu3);
 
-        System.out.println("Nota definitiva = " + def);
+        System.out.println("Nota definitiva = " + fin);
     }
 
     /**
@@ -108,13 +108,13 @@ public class notas {
      * @return Un mensaje indicando si el estudiante aprobó o suspendió
      */
     public void aprobado() {
-        if (def < 5 && def >= 0) {
-            System.out.println("Suspendido");
+        if (fin < 5 && fin >= 0) {
+            System.out.println("Suspenso");
         } else {
-            if (def >= 5 && def <= 10) {
+            if (fin >= 5 && fin <= 10) {
                 System.out.println("Aprobado");
             } else {
-                System.out.println("Error en las notas");
+                System.out.println("Fallo en las notas");
             }
         }
     }
